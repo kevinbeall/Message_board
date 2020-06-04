@@ -1,0 +1,32 @@
+<%- include partials/head.ejs -%>
+  <main>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">
+          <%= title %>
+        </h1>
+        <p class="lead">If you have made it here, please leave a message and tell me about yourself</p>
+        <a href="/new" class="btn btn-primary">Add a message</a>
+      </div>
+    </div>
+    <div class="displayMessages">
+      <% messages.forEach(message => { %>
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">
+              <%= message.text %>
+            </h5>
+            <p class="card-text text-capitalize font-italic text-right">
+              -
+              <%= message.user %>
+            </p>
+          </div>
+          <div class="card-footer text-muted">
+            <%= message.added %>
+          </div>
+        </div>
+        <% }) %>
+    </div>
+    <a href="/new" class="btn btn-primary">Add a message</a>
+  </main>
+  <%- include partials/foot.ejs -%>

@@ -1,0 +1,37 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #595959;
+}
+
+a {
+  color: #00B7FF;
+}
+
+main {
+  padding: 50px;
+}
+
+.displayMessages {
+  width: 60%;
+  margin: auto;
+  padding: 50px 0;
+  font-size: 1.3em;
+}
+
+.card-title {
+  font-size: 1.5em;
+}
+
+.card {
+  margin: 30px;
+}
+
+.jumbotron {
+  background-color: #BBCCB3;
+}
+
+@media(min-width: 300px){
+  .displayMessages {
+    width: 90%;
+  }
+}

@@ -1,0 +1,21 @@
+<%- include partials/head.ejs -%>
+  <main>
+    <h1>
+      <%= title %>
+    </h1>
+    <form method="POST" action="/new">
+      <div class="form-group">
+        <label for="exampleInputEmail1">User:</label>
+        <input type="text" name="user" class="form-control" placeholder="Cool Nickname" required>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Message:</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" name="text" rows="3" placeholder="What do you want to say?"
+          required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <a href="/" class="btn btn-danger">Cancel</a>
+    </form>
+  </main>
+  <%- include partials/foot.ejs -%>
